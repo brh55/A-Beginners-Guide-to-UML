@@ -88,6 +88,11 @@
                     <p>If an instance of the <code>Employee</code> class were to be created, then the employee object would have access to the <code>name</code> and <code>age</code> attributes, as well as the <code>getName</code> method.</p>
                     <hr>
                     <h2>Bad Examples</h2>
+                     <div class="img-center">
+                        <img src="assets/img/bad-diagram.jpg" class="img-responsive">
+                        <span class="figure">Figure 4.3: An example of a bad class diagram.</span>
+                    </div>
+                    <p>The diagram above is an example of a bad diagram, for the <code>Person</code> class is an abstract class when it should be a concrete class. Since the <code>Employee</code> class inherits from the <code>Person</code> class, then both classes should have the ability to be instantiated. The other fault with this class diagram is that <code>Employee</code> two of the same attributes as <code>Person</code>, those of which are <code>name</code> and <code>age</code>. Since <code>Employee</code> inherits from <code>Person</code>, the <code>Employee</code> object would have access to both the <code>name</code> and <code>age</code> attributes.</p>
                     <article class="paging">
                         <div class="float-left">
                             <a class="btn btn-primary" href="/advance-concepts.html"><i class="fa fa-angle-double-left"></i> Previous Section</a>
