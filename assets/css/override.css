@@ -1,0 +1,278 @@
+/* CSS Stylesheet for CMIT INFO 355 */
+/* Font Imports */
+@import url(http://fonts.googleapis.com/css?family=Merriweather);
+body {
+  background-color: #f7f7f7;
+}
+/* Typography */
+p {
+  line-height: 24px;
+  color: #495054;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Merriweather', serif;
+  color: #495054;
+}
+
+h2 {
+  font-size: 26px;
+  line-height: 32px;
+}
+
+h3 {
+  font-size: 20px;
+  line-height: 28px;
+}
+dt {
+  margin-top: 10px;
+}
+
+.code, code {
+  font-family: "Courier New", Courier, monospace;
+  padding: 2px 4px;
+  font-size: 90%;
+  color: #906916;
+  background-color: #f9f2f4;
+  border-radius: 4px;
+}
+
+.figure {
+  display: block;
+  font-size: 12px;
+  margin-bottom: 10px;
+}
+
+hr {
+  border-top: 1px solid #CFCFCF;
+  margin: 15px 0;
+}
+/* logo */
+.logo { 
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.fa-stack {
+  display: block;
+  margin: 4px auto;
+}
+
+.fa-stack-2x {
+  color: rgb(55, 167, 166);
+}
+
+.text { 
+  display: block;
+  color: white;
+  font-weight: 700;
+}
+
+.authors {
+  color: rgb(168, 168, 168);
+  font-weight: 100;
+  font-size: 12px;
+}
+
+/* tables */
+table {
+  margin: 25px auto;
+  display: block;
+}
+thead {
+  background: rgb(55, 167, 166);
+  color: white;
+  border: 1px solid black;
+  font-weight: bold;
+}
+
+td {
+  border: 1px solid #1C9493;
+  padding: 10px;
+}
+
+tbody tr:nth-child(odd) {
+  background: rgba(211, 211, 211, 0.51);
+}
+
+
+
+/* images */
+.left {
+  float: left;
+  margin: 10px 10px 10px 0px;
+}
+
+.right{
+  float: right;
+  margin: 10px 0px 10px 10px;
+}
+
+.img-center {
+  display: block;
+  margin: 0 auto;
+}
+/* main content */
+.main {
+  padding: 10px 40px 40px 40px;
+}
+
+/* Sidebar */
+@media (min-width: 768px) {
+  .navbar.navbar-inverse.navbar-fixed-top {
+    display: none;
+  }
+}
+
+.sidebar {
+  background-color: #2c3135;
+  border-right: 1px solid #2c3135;
+  padding: 20px 30px 30px 30px;
+}
+
+.nav-sidebar {
+  margin-left: -30px;
+  margin-right:-30px;
+}
+
+.nav-sidebar a {
+  color: #fff;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  transition: all .4s ease;
+}
+
+.nav-sidebar li.active a {
+  color: #37a7a6;
+  border-left: 4px solid;
+}
+
+.nav-sidebar > .active > a, .nav-sidebar > .active > a:hover, .nav-sidebar > .active > a:focus {
+  background: none;
+}
+
+.nav>li>a:focus, .nav>li>a:hover {
+  background-color: #242527;
+}
+
+.sidebar a:hover {
+  color: #37a7a6;
+}
+
+/* btn */
+.btn.btn-primary {
+  border-radius: 29px;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 12px;
+  padding: 10px 28px;
+  background-color: rgb(218, 154, 92);
+  letter-spacing: 1.01px;
+  border: none;
+  transition: all .4s ease;
+  display: inline-block;
+  margin: 15px 0;
+}
+
+.btn.btn-primary:hover {
+  padding: 10px 44px;
+}
+
+.paging .btn.btn-primary {
+  background-color: rgb(55, 146, 167);
+}
+
+/* paging */
+.float-right {
+  float: right;
+}
+
+.float-left {
+  float: left;
+}
+
+.clear {
+  clear: both;
+}
+
+.tweet-it {
+  text-align: right;
+}
+
+/* quiz */
+a.button.checkAnswer {
+  display: inline-block;
+  background: rgb(134, 194, 134);
+  color: white;
+  padding: 6px 15px;
+  border-radius: 100px;
+  transition: all .4s ease;
+  margin: 8px 0;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+a.button.checkAnswer:hover {
+  background: rgb(143, 192, 143);
+  text-decoration: none;
+}
+
+a.button.backToQuestion {
+  background: rgb(167, 55, 81);
+  color: white;
+  padding: 6px 15px;
+  border-radius: 100px;
+  transition: all .4s ease;
+  margin: 8px 0;
+  text-decoration: none;
+  margin-right: 40px;
+}
+
+a.button.backToQuestion:hover {
+  background: rgb(140, 36, 61);
+  text-decoration: none;
+  color: white
+}
+
+.nextQuestion {
+  background: rgb(55, 137, 167);
+  color: white;
+  padding: 6px 15px;
+  border-radius: 100px;
+  transition: all .4s ease;
+  margin: 8px 0;
+  text-decoration: none;
+  margin-right: 40px;
+}
+
+.nextQuestion:hover {
+  text-decoration: none;
+  color: white;
+}
+
+.citation li {
+   list-style-type: none;
+   margin-top: 10px;
+}
+
+.answers img {
+  margin-top: 15px;
+}
+@media (max-width: 768px) {
+  .main {
+    padding-top: 70px;
+  }
+  .paging {
+    margin: 0 auto;
+    text-align: center;
+  }
+}
+
+@media (max-width: 550px ) {
+  .float-right {
+    float: none;
+  }
+  .float-left {
+    float: none;
+  }
+}

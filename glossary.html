@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>INFO 355 Class Modeling Tutorial</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="assets/css/slickQuiz.css">
+        <link rel="stylesheet" href="assets/css/master.css">
+        <link rel="stylesheet" href="assets/css/override.css">
+        <link rel="stylesheet" href="assets/css/animate.css">
+        <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+            <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+        <![endif]-->
+    </head>
+    <body id="slickQuiz">
+        <nav class="navbar navbar-inverse navbar-fixed-top">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="#">Class Modeling Interactive Tutorial</a>
+                </div>
+                <div id="navbar" class="navbar-collapse collapse">
+                    <ul class="nav navbar-nav">
+                        <li><a href="/index.html">Getting Started</a></li>
+                        <li><a href="/basics.html">The Basics</a></li>
+                        <li><a href="/associations.html">Associations</a></li>
+                        <li><a href="/advance-concepts.html">Further Concepts</a></li>
+                        <li><a href="/class-diagram.html">Class Diagram Examples</a></li>
+                        <li class="active"><a href="/glossary.html">Glossary <span class="sr-only">(current)</span></a></li>
+                        <li><a href="/review.html">Final Review</a></li>
+                        <li><a href="/additional-info.html">Additional Information</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-sm-3 col-md-2 sidebar">
+                    <section class="logo">
+                            <span class="fa-stack fa-2x">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-graduation-cap fa-stack-1x fa-inverse"></i>
+                            </span>
+                            <span class="text">Class Modeling Interactive Tutorial</span>
+                            <span class="authors">Jason Walsh, Brandon Him, &amp; Jasmine Marcial</span>
+                    </section>
+                    <ul class="nav nav-sidebar">
+                        <li><a href="/index.html">Getting Started</a></li>
+                        <li><a href="/basics.html">The Basics</a></li>
+                        <li><a href="/associations.html">Associations</a></li>
+                        <li><a href="/advance-concepts.html">Further Concepts</a></li>
+                        <li><a href="/class-diagram.html">Class Diagram Examples</a></li>
+                        <li class="active"><a href="/glossary.html">Glossary<span class="sr-only">(current)</span></a></li>
+                        <li><a href="/review.html">Final Review</a></li>
+                        <li><a href="/additional-info.html">Additional Information</a></li>
+                    </ul>
+                </div>
+                <section class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main animated fadeIn">
+                    <h1>Glossary</h1>
+                    <hr>
+                    <dl>
+                      <dt>Abstract</dt>
+                          <dd>A blueprint or framework to reduce complexity, disregarding implementation details of a class.</dd>
+                      <dt>Abstract Class</dt>
+                          <dd>A superclass that contains no objects. This class cannot be instantiated.</dd>
+                      <dt>Aggregation</dt>
+                          <dd>A "whole-part" relationship where a part can exist without the whole. <i> See Composition</i></dd>
+                      <dt>Analysis Model</dt>
+                          <dd>Models and provides insight on the domain, function, and behavior of the system based on the visible requirements.</dd>
+                      <dt>Associations</dt>
+                          <dd>Relations of classes.</dd>
+                      <dt>Attribute</dt>
+                          <dd>Property of a class.</dd>
+                      <dt>Class</dt>
+                          <dd>Defines an object containing the various attributes and methods.</dd>
+                      <dt>Class Diagram</dt>
+                          <dd>A diagram that provides a representation of objects and classes within a system and their relationships.</dd>
+                      <dt>Composition</dt>
+                          <dd>A "whole-part" relationships where a part cannot exist without the whole. <i> See Aggregation</i></dd>
+                      <dt>Constraint</dt>
+                          <dd>Restrictions on an object or a set of objects.</dd>
+                      <dt>Data Hiding</dt>
+                          <dd>The principle of class data not being accessible directly.</dd>
+                      <dt>Domain Model</dt>
+                          <dd>Models and captures the problem domain in relation to the objects, classes, attributes, methods, relationships, and constraints.</dd>
+                      <dt>Generalization</dt>
+                          <dd>Simplify a class into specific classes.</dd>
+                      <dt>Inheritance</dt>
+                          <dd>A subclass takes in the attributes, methods, and relationships of a superclass.</dd>
+                      <dt>Interface</dt>
+                          <dd>A set of attributions and methods that represents a “behaves-like” relationship.</dd>
+                      <dt>Multiple-Inheritance</dt>
+                          <dd>When a class takes inherits from more than one class.</dd>
+                      <dt>Multiplicity</dt>
+                          <dd>How many objects of a class associate with how many objects of another class</dd>
+                      <dt>Object</dt>
+                          <dd>A representation or instantiation of a class.</dd>
+                      <dt>Operations</dt>
+                          <dd>Behavior of a class.</dd>
+                      <dt>Superclass</dt>
+                          <dd>A generic class.</dd>
+                      <dt>Subclass</dt>
+                          <dd>A specific class.</dd>
+                      <dt>UML</dt>
+                          <dd>Unified Modeling Language, a modeling language.</dd>
+                      <dt>Visibility</dt>
+                          <dd>A constraint on attribute or methods within a class, UML has four types of visibilities: (Public (+), Package(~), Protected (#), Private(-))</dd>   
+                    </dl>     
+                    <hr>
+                    <article class="paging">
+                        <div class="float-left">
+                            <a class="btn btn-primary" href="/class-diagram.html"><i class="fa fa-angle-double-left"></i> Previous Section</a>
+                        </div>
+                        <div class="float-right">
+                            <a class="btn btn-primary" href="/review.html">Next Section <i class="fa fa-angle-double-right"></i></a>
+                        </div>
+                        <br class="clear">
+                    </article>
+                </section>
+                
+            </div>
+        </div>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+        <script src="assets/js/slickQuiz-config.js"></script>
+        <script src="assets/js/slickQuiz.js"></script>
+        <script src="assets/js/main.js"></script>
+    </body>
+</html>

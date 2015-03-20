@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>INFO 355 Class Modeling Tutorial</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="assets/css/slickQuiz.css">
+        <link rel="stylesheet" href="assets/css/master.css">
+        <link rel="stylesheet" href="assets/css/override.css">
+        <link rel="stylesheet" href="assets/css/animate.css">
+        <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+            <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+        <![endif]-->
+    </head>
+    <body id="slickQuiz">
+        <nav class="navbar navbar-inverse navbar-fixed-top">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="#">Class Modeling Interactive Tutorial</a>
+                </div>
+                <div id="navbar" class="navbar-collapse collapse">
+                    <ul class="nav navbar-nav">
+                        <li class="active"><a href="/index.html">Getting Started<span class="sr-only">(current)</span></a></li>
+                        <li><a href="/basics.html">The Basics</a></li>
+                        <li><a href="/associations.html">Associations</a></li>
+                        <li><a href="/advance-concepts.html">Further Concepts</a></li>
+                        <li><a href="/class-diagram.html">Class Diagram Examples</a></li>
+                        <li><a href="/glossary.html">Glossary</a></li>
+                        <li><a href="/review.html">Final Review</a></li>
+                        <li><a href="/additional-info.html">Additional Information</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-sm-3 col-md-2 sidebar">
+                    <section class="logo">
+                        <span class="fa-stack fa-2x">
+                            <i class="fa fa-circle fa-stack-2x"></i>
+                            <i class="fa fa-graduation-cap fa-stack-1x fa-inverse"></i>
+                        </span>
+                        <span class="text">Class Modeling Interactive Tutorial</span>
+                        <span class="authors">Jason Walsh, Brandon Him, &amp; Jasmine Marcial</span>
+                    </section>
+                    <ul class="nav nav-sidebar">
+                        <li class="active"><a href="/index.html">Getting Started<span class="sr-only">(current)</span></a></li>
+                        <li><a href="/basics.html">The Basics</a></li>
+                        <li><a href="/associations.html">Associations</a></li>
+                        <li><a href="/advance-concepts.html">Further Concepts</a></li>
+                        <li><a href="/class-diagram.html">Class Diagram Examples</a></li>
+                        <li><a href="/glossary.html">Glossary</a></li>
+                        <li><a href="/review.html">Final Review</a></li>
+                        <li><a href="/additional-info.html">Additional Information</a></li>
+                    </ul>
+                </div>
+                <section class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main animated fadeIn">
+                    <h1>Getting Started</h1>
+                    <hr>
+                        <h2>Introduction</h2>
+                            <p>This website is intended to provide content to developing and understanding how to utilize class modeling and UML techniques. It will cover over the core concepts and techniques involved with class modeling and discuss best practices associated with class modeling.</p>
+                            <p>This class modeling interactive tutorial is created in hopes to provide users with a better understanding of these best practices with detailed explanations of good class diagrams, as well as interactive tutorials to engage the user and solidify the concepts.</p>        
+                        <h2>What is UML and class modeling?</h2>
+                            <img src="assets/img/UML_logo.gif" alt="unified modeling language logo" class="img-responsive left" alt="Responsive image">
+                            <p>When starting class modeling, Unified Modeling Language (UML) is considered one of the most widely used modeling language. UML provides a language to specify the details found within a system. It has become the standard for visualizing and designing the conceptual architecture of a system and declared by Object Management Group (OMG), “the standard of modeling object oriented software” (Reference 1).</p>
+                        <h2>Class Modeling</h2>
+                            <p>When starting with class modeling, the first concept to understand are classes. A class is similar to a template. A class contains the various attributes and methods that the object has access to. For instance, imagine modeling an individual within a system, we can visualize them belonging to a group called “Person.” This group can be considered a class. Thus, within a <span class="code">Person</span> class, it would contain attributes such as first name, last name, and age. The <span class="code">Person</span> class can also have methods, such as determining if it is the birthday of the person.</p>
+                            <p>Often times, classes and objects are interpreted as the same thing, however, they are not. An object is an instantiated class. Instantiation is the creation of an abstraction or a template, such as a class. The object itself has access to the various attributes and methods of the class. Referring back to the Person class, to determine if it is the birthday of the person, the class may have a method called <span class="code">`is_birthday`</span> that returns True if the current day is equal to the birthday or the person, otherwise False.</p>
+                            <p>Object oriented programming has become a standard in most modern day programming languages, and it promotes for the reusability and abstraction of code. Implementing class diagrams is crucial for the development of any application, for it provides a clear and concise overview of how the application will be structured. Therefore, it is important for developers to understand the “best practices” when it comes to creating class diagrams.</p>
+                    <hr>
+                    <article class="paging">
+                        <div class="float-left">
+                        </div>
+                        <div class="float-right">
+                            <a class="btn btn-primary" href="/basics.html">Next Section <i class="fa fa-angle-double-right"></i></a>
+                        </div>
+                        <br class="clear">
+                    </article>
+                </section>
+            </div>
+        </div>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+        <script src="assets/js/slickQuiz-config.js"></script>
+        <script src="assets/js/slickQuiz.js"></script>
+        <script src="assets/js/main.js"></script>
+    </body>
+</html>
