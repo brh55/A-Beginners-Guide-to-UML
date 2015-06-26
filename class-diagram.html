@@ -30,11 +30,11 @@
                 </div>
                 <div id="navbar" class="navbar-collapse collapse">
                     <ul class="nav navbar-nav">
-                        <li class="active"><a href="/index.html">Getting Started<span class="sr-only">(current)</span></a></li>
+                        <li><a href="/index.html">Getting Started</a></li>
                         <li><a href="/basics.html">The Basics</a></li>
                         <li><a href="/associations.html">Associations</a></li>
                         <li><a href="/advance-concepts.html">Further Concepts</a></li>
-                        <li><a href="/class-diagram.html">Class Diagram Examples</a></li>
+                        <li class="active"><a href="/class-diagram.html">Class Diagram Examples <span class="sr-only">(current)</span></a></li>
                         <li><a href="/glossary.html">Glossary</a></li>
                         <li><a href="/review.html">Final Review</a></li>
                         <li><a href="/additional-info.html">Additional Information</a></li>
@@ -54,35 +54,51 @@
                         <span class="authors">Jason Walsh, Brandon Him, &amp; Jasmine Marcial</span>
                     </section>
                     <ul class="nav nav-sidebar">
-                        <li class="active"><a href="/index.html">Getting Started<span class="sr-only">(current)</span></a></li>
+                        <li><a href="/index.html">Getting Started</a></li>
                         <li><a href="/basics.html">The Basics</a></li>
                         <li><a href="/associations.html">Associations</a></li>
                         <li><a href="/advance-concepts.html">Further Concepts</a></li>
-                        <li><a href="/class-diagram.html">Class Diagram Examples</a></li>
+                        <li class="active"><a href="/class-diagram.html">Class Diagram Examples<span class="sr-only">(current)</span></a></li>
                         <li><a href="/glossary.html">Glossary</a></li>
                         <li><a href="/review.html">Final Review</a></li>
                         <li><a href="/additional-info.html">Additional Information</a></li>
                     </ul>
                 </div>
                 <section class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main animated fadeIn">
-                    <h1>Getting Started</h1>
+                    <h1>Class Diagrams</h1>
                     <hr>
-                        <h2>Introduction</h2>
-                            <p>This website is intended to provide content to developing and understanding how to utilize class modeling and UML techniques. It will cover over the core concepts and techniques involved with class modeling and discuss best practices associated with class modeling.</p>
-                            <p>This class modeling interactive tutorial is created in hopes to provide users with a better understanding of these best practices with detailed explanations of good class diagrams, as well as interactive tutorials to engage the user and solidify the concepts.</p>        
-                        <h2>What is UML and class modeling?</h2>
-                            <img src="assets/img/UML_logo.gif" alt="unified modeling language logo" class="img-responsive left" alt="Responsive image">
-                            <p>When starting class modeling, Unified Modeling Language (UML) is considered one of the most widely used modeling language. UML provides a language to specify the details found within a system. It has become the standard for visualizing and designing the conceptual architecture of a system and declared by Object Management Group (OMG), “the standard of modeling object oriented software” (Reference 1).</p>
-                        <h2>Class Modeling</h2>
-                            <p>When starting with class modeling, the first concept to understand are classes. A class is similar to a template. A class contains the various attributes and methods that the object has access to. For instance, imagine modeling an individual within a system, we can visualize them belonging to a group called “Person.” This group can be considered a class. Thus, within a <span class="code">Person</span> class, it would contain attributes such as first name, last name, and age. The <span class="code">Person</span> class can also have methods, such as determining if it is the birthday of the person.</p>
-                            <p>Often times, classes and objects are interpreted as the same thing, however, they are not. An object is an instantiated class. Instantiation is the creation of an abstraction or a template, such as a class. The object itself has access to the various attributes and methods of the class. Referring back to the Person class, to determine if it is the birthday of the person, the class may have a method called <span class="code">`is_birthday`</span> that returns True if the current day is equal to the birthday or the person, otherwise False.</p>
-                            <p>Object oriented programming has become a standard in most modern day programming languages, and it promotes for the reusability and abstraction of code. Implementing class diagrams is crucial for the development of any application, for it provides a clear and concise overview of how the application will be structured. Therefore, it is important for developers to understand the “best practices” when it comes to creating class diagrams.</p>
+                    <p>Class diagrams serve to illustrate a real-world representation of classes and their relationships.</p>
+                    <h2>Goals of a Class Diagram</h2>
+                    <ul>
+                        <li>Analyze the requirements in a conceptual model</li>
+                        <li>Illustrate a design of a object-orientated software</li>
+                        <li>Mode
+                    </ul>
                     <hr>
+                    <h2>Class Diagram Example With Overview</h2>
+                    <img src="assets/img/class-diagram-domain-overview.png" class="img-responsive" alt="an overview of a good class diagram with arrows indicating certain notations">
+                    <span class="figure">Figure 4.1: Example of a good class diagram.</span>
+                    <p>The above diagram represents an overview of what a user would expect to see in a good class diagram. While the diagram contains quite a lot of information, it contains core features such as class attributes, generalizations, abstract classes, stereotypes, etc.</p>
+                    <h2>Good Example</h2>
+                    <div class="img-center">
+                        <img src="assets/img/good-ex1.jpg" class="img-responsive">
+                        <span class="figure">Figure 4.2: Another example of a good class diagram that represents the realtionship between a Person and an Employee.</span>
+                    </div>
+                    <p>The above diagran consists of 2 classes and 1 interface. This is a good example of a class diagram, for it adheres to all of the rules used in creating class diagrams. In this class diagram, you see that the <code>Person</code> class is a concrete class that contains a <code>name</code> and <code>age</code> attribute, as well as a <code>getName</code> method. Since the <code>Person</code> class implements the <code>UserInterface</code>, it must implicitly define the <code>getName</code> method, in which case, it does. The <code>Employee</code> class extends from the <code>Person</code> class. Therefore, it is considered to a subclass of the superclass <code>Employee</code></p>
+                    <p>If an instance of the <code>Employee</code> class were to be created, then the employee object would have access to the <code>name</code> and <code>age</code> attributes, as well as the <code>getName</code> method.</p>
+                    <hr>
+                    <h2>Bad Examples</h2>
+                     <div class="img-center">
+                        <img src="assets/img/bad-diagram.jpg" class="img-responsive">
+                        <span class="figure">Figure 4.3: An example of a bad class diagram.</span>
+                    </div>
+                    <p>The diagram above is an example of a bad diagram, for the <code>Person</code> class is an abstract class when it should be a concrete class. Since the <code>Employee</code> class inherits from the <code>Person</code> class, then both classes should have the ability to be instantiated. The other fault with this class diagram is that <code>Employee</code> two of the same attributes as <code>Person</code>, those of which are <code>name</code> and <code>age</code>. Since <code>Employee</code> inherits from <code>Person</code>, the <code>Employee</code> object would have access to both the <code>name</code> and <code>age</code> attributes.</p>
                     <article class="paging">
                         <div class="float-left">
+                            <a class="btn btn-primary" href="/advance-concepts.html"><i class="fa fa-angle-double-left"></i> Previous Section</a>
                         </div>
                         <div class="float-right">
-                            <a class="btn btn-primary" href="/basics.html">Next Section <i class="fa fa-angle-double-right"></i></a>
+                            <a class="btn btn-primary" href="/glossary.html">Next Section <i class="fa fa-angle-double-right"></i></a>
                         </div>
                         <br class="clear">
                     </article>
@@ -96,4 +112,3 @@
         <script src="assets/js/main.js"></script>
     </body>
 </html>
->>>>>>> master
